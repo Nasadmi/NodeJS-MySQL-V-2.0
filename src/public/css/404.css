@@ -1,0 +1,33 @@
+.content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h1 {
+    color: var(--White-Color);
+    font-family: var(--Oswald-Font);
+    font-size: 70px;
+    letter-spacing: 1px;
+}
+
+.image-404 img {
+    width: 400px;
+    height: 400px;
+}
+
+.content a {
+    color: var(--Red-Color);
+    font-family: var(--Oswald-Font);
+    font-size: 50px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--White-Color);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.content a:hover {
+    color: var(--White-Color);
+    border-bottom: var(--Red-Color) solid 3px;
+}

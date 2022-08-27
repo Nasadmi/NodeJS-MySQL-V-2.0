@@ -1,0 +1,29 @@
+.content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.content h2 {
+    font-size: 65px;
+    font-family: var(--Oswald-Font);
+    letter-spacing: 1px;
+    color: var(--White-Color);
+}
+
+.content h1 {
+    color: var(--White-Color);
+    font-size: 70px;
+}
+
+@media (max-width: 860px) {
+    .content {
+        margin-top: 16%;
+    }
+    .content h2 {
+        font-size: 45px;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+}

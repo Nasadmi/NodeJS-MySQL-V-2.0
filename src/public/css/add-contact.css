@@ -1,0 +1,93 @@
+.content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.minicard {
+    margin: 30px;
+}
+
+.minicard h2 {
+    color: var(--White-Color);
+    font-family: var(--Oswald-Font);
+    text-shadow: 0 0 20px var(--Red-Color);
+    letter-spacing: 0.5px;
+    font-size: 30px;
+}
+
+.insert {
+    width: 42vw;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    background: none;
+    color: var(--White-Color);
+    border-bottom: 5px solid var(--Red-Color);
+    outline: none;
+    text-align: center;
+    font-family: var(--Montserrat-Font);
+    font-weight: bold;
+}
+
+.content-btn {
+    margin-top: 4%;
+}
+
+.btn {
+    padding: 15px;
+    width: 25vw;
+    margin: auto;
+    font-size: 40px;
+    background-color: var(--Black-Color);
+    color: var(--White-Color);
+    box-shadow: 0 0 30px var(--Red-Color);
+    font-family: var(--Oswald-Font);
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 17px;
+    transition: 0.45s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--Grey-Color);
+}
+
+.btn:active {
+    background-color: var(--Red-Color);
+    box-shadow: 0 0 30px var(--Grey-Color);
+}
+
+@media (max-width: 860px) {
+    .card {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .minicard {
+        margin: 10px auto;
+        width: 100vw;
+    }
+
+    .minicard h2 {
+        font-size: 40px;
+    }
+
+    .insert {
+        width: 80vw;
+    }
+
+    .btn {
+        width: 75vw;
+    }
+
+}

@@ -1,0 +1,44 @@
+:root {
+    --Black-Color: #171717;
+    --Grey-Color: #444444;
+    --Red-Color: #DA0037;
+    --White-Color: #EDEDED;
+    --Montserrat-Font: 'Montserrat', sans-serif;
+    --Oswald-Font: 'Oswald', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Black-Color);
+    font-size: 16px;
+    font-family: var(--Montserrat-Font);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+span.red {
+    color: var(--Red-Color);
+}
+
+@media (max-width: 860px) {
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <!--Links-->
+    <%- include('partials/links') %>
+    <link rel="stylesheet" href="/css/list-contact.css">
+</head>
+<body>
+    <div class="container">
+        <!--Heading-->
+        <%- include('partials/heading') %>
+        <div class="empity">
+            <h1 class="title">Don't have contacts?</h1>
+            <a href="/add-contact">
+                <h1>Go to 'Add a New Contact' to Add One</h1>
+            </a>
+        </div>
+        <div class="cards">
+            <% for(var i = 0; i < data.length; i++) { %>
+                <div class="minicard">
+                    <h1><%= data[i].name %>, <%= data[i].age %></h1>
+                    <h2 class="top"><%= data[i].email %></h2>
+                    <h2 class="top"><%= data[i].number %></h2>
+                    <ul class="options">
+                        <li>
+                            <a href="/delete/<%= data[i].id %>">
+                                <i class="fa-solid fa-eraser"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/edit/<%= data[i].id %>">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <script src="/js/frontend/empity.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/js/frontend/scroll.js"></script>
+</body>
+</html>

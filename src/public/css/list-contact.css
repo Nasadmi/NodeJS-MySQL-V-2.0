@@ -1,0 +1,105 @@
+.empity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 15% auto;
+    width: 70vw;
+}
+
+h1.title {
+    color: var(--White-Color);
+    font-family: var(--Oswald-Font);
+    letter-spacing: 1px;
+    font-size: 60px;
+}
+
+.empity a {
+    color: var(--Red-Color);
+    font-family: var(--Montserrat-Font);
+    font-size: 16px;
+    width: 70vw;
+    margin: 20px auto auto auto;
+}
+
+.empity a h1 {
+    border-bottom: 1.5px solid var(--White-Color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+}
+
+.minicard {
+    margin: 20px 10px 10px auto;
+    background-color: var(--Grey-Color);
+    color: var(--White-Color);
+    box-shadow: 0 0 25px var(--Red-Color);
+    padding: 15px;
+    border-radius: 15px;
+    width: 44vw;
+    text-align: center;
+    border: var(--Black-Color) solid 5px;
+}
+
+.minicard h2 {
+    margin-top: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.options li a {
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: var(--Black-Color);
+    cursor: pointer;
+}
+
+.fa-eraser {
+    color: rgb(255, 0, 0);
+}
+
+.fa-pen-to-square {
+    color: rgb(0, 255, 242);
+}
+
+.fa-eraser, .fa-pen-to-square {
+    transition: 0.5s ease-in-out;
+}
+
+.fa-eraser:hover, .fa-pen-to-square:hover {
+    color: var(--White-Color);
+}
+
+.fa-eraser:active, .fa-pen-to-square:active {
+    color: var(--White-Color);
+}
+
+@media (max-width: 860px) {
+    .empity {
+        width: 90vw;
+    }
+
+    h1.title {
+        font-size: 45px
+    }
+
+    .empity a {
+        font-size: 12px;
+    } 
+
+    .cards {
+        grid-template-columns: 100%;
+    }
+
+    .minicard {
+        width: 90vw;
+        margin: 20px auto;
+    }
+}
