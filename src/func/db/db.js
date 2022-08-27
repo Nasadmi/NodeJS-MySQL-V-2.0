@@ -4,7 +4,7 @@ const connector = mysql.createConnection(
     {
         host: 'localhost',
         user: 'root',
-        password: 'Diego@008**$',
+        password: '',
         database: 'contact'
     }
 )
